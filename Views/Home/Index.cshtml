@@ -17,12 +17,12 @@
         <ol>
         @foreach(var contact in Model)
         {
-        <li><a href="/allcontacts/@contact.GetId()">@contact.GetName()</a></li>
+        <li><a href="/contactdetails/@contact.GetId()">@contact.GetName()</a></li>
         }
         </ol>
 
         <form  action="/clearallcontacts" method="post">
-          <button type="submit" name="button">Clear All</button>
+          <button type="submit" name="button">Clear AddressBook</button>
         </form>
 
 </div>
