@@ -18,23 +18,25 @@ namespace AddressBook.Controllers
             return View();
         }
         [HttpPost("/contact/new")]
-        public ActionResult ContactsAdded()
-        {
-            Contact newContact = new Contact(Request.Form["name"],Request.Form["phone"],Request.Form["address"]);
-            List<Contact> allTheContacts = Contact.GetAll();
-            return View("ContactCreated", allTheContacts);
-        }
-        [HttpGet("/contact/new")]
         public ActionResult ContactCreated()
         {
-            // List<Contact> ContactsCreated = Contact.GetAll();
+            Contact newContact = new Contact(Request.Form["name"],Request.Form["phone"],Request.Form["address"]);
+            List<Contact> allContacts = Contact.GetAll();
             return View();
         }
-        // [HttpGet("/")]
-        // public ActionResult Index()
-        // {
-        //     return View();
-        // }
+        [HttpGet("/contacts")]
+        public ActionResult ContactList()
+        {
+            List<Contact> allContacts = Contact.GetAll();
+            return View("Index",allContacts);
+        }
+        [HttpGet("/contacts/{id}")]
+        public ActionResult ContactDetailsView(int id)
+        {
+            Contact contact = Contact.Find(id);
+            return View(contact);
+        }
+
         [HttpPost("/clearAllContacts")]
         public ActionResult ClearAllContacts()
         {

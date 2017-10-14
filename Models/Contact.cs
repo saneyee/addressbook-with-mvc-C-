@@ -23,7 +23,7 @@ namespace AddressBook.Models
     {
       return _name;
     }
-    public string GePhone()
+    public string GetPhone()
     {
       return _phone;
     }

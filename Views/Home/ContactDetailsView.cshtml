@@ -8,14 +8,10 @@
         <h1>Address-Book</h1>
         </div>
         <h3>Contact Details of @Model.GetName() :</h3>
-        <ol>
-            @foreach (var contact in @Model)
-            {
-                <li>@contact.GetName()</li>
-                <li>@contact.GetPhone()</li>
-                <li>@contact.GetAddress()</li>
-            }
-        </ol>
+
+            <h4>Phone Num : @Model.GetPhone()</h4>
+            <h4>Address : @Model.GetAddress()</h4>
+        <p><a href='/contacts'>View Contact List</a></p>
         <p><a href='/'>Back Home</a></p>
     </div>
 </body>
