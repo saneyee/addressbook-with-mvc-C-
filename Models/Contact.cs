@@ -4,7 +4,6 @@ namespace AddressBook.Models
 {
   public class Contact
   {
-
     private string _name;
     private string _phone;
     private string _address;
@@ -12,7 +11,7 @@ namespace AddressBook.Models
 
     private static List<Contact> _instances = new List<Contact> {};
 
-    public Cd (string name, string phone, string address)
+    public Contact (string name, string phone, string address)
     {
       _name = name;
       _phone = phone;
@@ -20,7 +19,6 @@ namespace AddressBook.Models
       _instances.Add(this);
       _id = _instances.Count;
     }
-
     public string GetName()
     {
       return _name;
@@ -33,22 +31,18 @@ namespace AddressBook.Models
     {
       return _address;
     }
-
     public int GetId()
     {
       return _id;
     }
-
     public static List<Contact> GetAll()
     {
       return _instances;
     }
-
     public static void ClearAll()
     {
       _instances.Clear();
     }
-
     public static Contact Find(int searchId)
     {
       return _instances[searchId-1];

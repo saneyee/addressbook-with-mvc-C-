@@ -1,0 +1,23 @@
+@{
+  Layout = "_Layout";
+}
+@{
+  Layout = "_Layout";
+}
+<body>
+    <div class="container">
+        <div class="jumbotron">
+        <h1>Address-Book</h1>
+        </div>
+        <h3>Contact Details of @Model.GetName() :</h3>
+        <ol>
+            @foreach (var contact in @Model)
+            {
+                <li>@contact.GetName()</li>
+                <li>@contact.GetPhone()</li>
+                <li>@contact.GetAddress()</li>
+            }
+        </ol>
+        <p><a href='/'>Return to Home Page</a></p>
+    </div>
+</body>

@@ -1,0 +1,9 @@
+/Users/saneyee/Desktop/C#/address-book/bin/Debug/netcoreapp1.1/addressbook.deps.json
+/Users/saneyee/Desktop/C#/address-book/bin/Debug/netcoreapp1.1/addressbook.runtimeconfig.json
+/Users/saneyee/Desktop/C#/address-book/bin/Debug/netcoreapp1.1/addressbook.runtimeconfig.dev.json
+/Users/saneyee/Desktop/C#/address-book/obj/Debug/netcoreapp1.1/addressbook.csproj.CoreCompileInputs.cache
+/Users/saneyee/Desktop/C#/address-book/obj/Debug/netcoreapp1.1/addressbook.AssemblyInfo.cs
+/Users/saneyee/Desktop/C#/address-book/bin/Debug/netcoreapp1.1/addressbook.dll
+/Users/saneyee/Desktop/C#/address-book/bin/Debug/netcoreapp1.1/addressbook.pdb
+/Users/saneyee/Desktop/C#/address-book/obj/Debug/netcoreapp1.1/addressbook.dll
+/Users/saneyee/Desktop/C#/address-book/obj/Debug/netcoreapp1.1/addressbook.pdb
