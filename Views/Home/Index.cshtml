@@ -6,23 +6,26 @@
         <div class="jumbotron">
         <h1>Address-Book</h1>
         </div>
-
-        <h3>Contact List</h3>
+        <br>
+        <br>
+        <h2>Contact List</h2>
         @if (@Model.Count == 0)
         {
-        <h4>No Contacts yet!!!!</h4>
+        <h4>Empty!!!!</h4>
         }
         <ol>
         @foreach(var contact in Model)
         {
-        <li><a href="/contacts/@contact.GetId()">@contact.GetName()</a></li>
+            <li><a href="/contacts/@contact.GetId()">@contact.GetName()</a></li>
         }
         </ol>
-
+        <br>
+        <br>
         <form  action="/clearallcontacts" method="post">
           <button type="submit" name="button">Clear AddressBook</button>
         </form>
-
+        <br>
+        <br>
         <h3><a href="/addacontact">Add a Contact</a></h3>
 
 </div>
