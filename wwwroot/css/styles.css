@@ -1,9 +1,12 @@
 body {
-    /*background-image: url("https://cdn.noths-static.com/fs/2c/40/7bb6-f9e4-4e1e-b992-02cc6c398a57/original_leather-address-book.jpg");*/
     background-color: black;
     color: #5b9ac6;
 }
 .jumbotron {
     text-align: center;
+    background-color: lightgray;
+}
+.well {
+    width: 30%;
     background-color: lightgray;
 }
